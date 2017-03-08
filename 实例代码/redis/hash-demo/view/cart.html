@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+</head>
+<body>
+	<table border="1" cellpadding="0" align="center" width="600" cellspacing="0">
+		
+		<tr>
+			
+			<th>
+				序号
+			</th>
+			<th>
+				商品名
+			</th>
+			<th>
+				图片名
+			</th>
+			<th>
+				商品价格
+			</th>
+			<th>
+				购买数
+			</th>
+			
+			<th>操作</th>
+		</tr>
+	
+		<?php foreach($cartData as $v):?>
+			<tr>
+				<td><?php echo $v['id']?></td>
+				<td><?php echo $v['gname']?></td>
+				<td><?php echo $v['pic']?></td>
+				<td><?php echo $v['price']?></td>
+				<td>
+					<a href="./cart.php?gid=<?php echo $v['id']?>&num=-1">-</a><?php echo $v['num']?><a href="./cart.php?gid=<?php echo $v['id']?>&num=1">+</a>
+				</td>
+				<td>
+					<a href="">删除</a>
+				</td>
+			</tr>
+		<?php endforeach;?>
+	</table>
+</body>
+</html>

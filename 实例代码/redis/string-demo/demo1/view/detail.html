@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文章详情页</title>
+</head>
+<body>
+	
+	<?php if($content['num']):?>
+
+		文章内容：<?php echo $content['content']?>
+
+		<span>阅读量：<?php echo $content['num']?></span>
+
+	<?php endif;?>
+</body>
+</html>

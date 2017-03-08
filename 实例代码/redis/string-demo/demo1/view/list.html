@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文章列表</title>
+</head>
+<body>
+	
+	<ul>
+		<?php foreach($list as $v):?>
+			<li>
+				
+				<a href="./detail.php?id=<?php echo $v['id']?>" title="点击查看文章详情"><?php echo $v['title']?></a>
+				
+			</li>
+		<?php endforeach?>
+	</ul>
+</body>
+</html>
