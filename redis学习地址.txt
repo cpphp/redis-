@@ -1,0 +1,6 @@
+https://www.kancloud.cn/thinkphp/little-redis-book/39118
+
+
+http://blog.nosqlfan.com/html/3813.html
+
+http://www.redis.cn/topics/distlock.html
